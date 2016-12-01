@@ -1,0 +1,12 @@
+version: '2'
+services:
+    flashme-postgresql:
+        container_name: flashme-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/flashme/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=flashme
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
